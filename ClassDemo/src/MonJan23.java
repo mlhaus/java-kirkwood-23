@@ -5,5 +5,7 @@ public class MonJan23 {
 }
 
 class WedJan25 {
-
+    public static void main(String[] args) {
+        System.out.println("Stuff");
+    }
 }
