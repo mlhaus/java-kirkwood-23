@@ -3,9 +3,3 @@ public class MonJan23 {
         System.out.println("Hello");
     }
 }
-
-class WedJan25 {
-    public static void main(String[] args) {
-        System.out.println("Stuff");
-    }
-}
