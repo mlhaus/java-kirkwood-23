@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class WedJan25 {
     public static void main(String[] args) {
+        double weight2 = 190000;
+        System.out.printf("You would weight %,.2f pounds on the Moon.\n", weight2 * (1 / 6.0));
+
         // Java Comment
         System.out.println("Hello"); // Another comment
 //        System.out.println();
