@@ -5,11 +5,11 @@ public class Circle extends Shape {
     private double radius;
     //constructors
     public Circle() {
-        super(0);
+        super(1);
         radius = 1;
     }
     public Circle(double radius) {
-        super(0);
+        super(1);
         setRadius(radius);
     }
     // methods
@@ -24,9 +24,8 @@ public class Circle extends Shape {
     }
     
     @Override
-    public String getArea() {
+    public double getArea() {
         double area = Math.PI * Math.pow(radius, 2);
-        String areaStr = String.format("%.2f", area);
-        return areaStr;
+        return area;
     }
 }

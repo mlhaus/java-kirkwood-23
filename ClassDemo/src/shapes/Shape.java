@@ -23,6 +23,6 @@ public abstract class Shape {
         this.numSides = numSides;
     }
     
-    public abstract String getArea();
+    public abstract double getArea();
     
 }
