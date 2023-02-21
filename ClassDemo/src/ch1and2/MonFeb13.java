@@ -1,8 +1,12 @@
+package ch1and2;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 public class MonFeb13 {
+
+    public static int temperature;
     
     public static int diceRoll() {
         int roll = (int)(Math.random() * 6) + 1;
@@ -10,6 +14,10 @@ public class MonFeb13 {
     }
     
     public static void main(String[] args) {
+        temperature = 40;
+        System.out.println(temperature);
+
+
         int i;
         for (i = 0; i < 5; i++) {
             System.out.println(i + " / 3: " + i / 3);
@@ -18,14 +26,14 @@ public class MonFeb13 {
         }
         
         
-        for(int i = 0; i < 20; i++) {
+        for(i = 0; i < 20; i++) {
             System.out.println(diceRoll());
         }
 
 
         byte b = 1;
         short s = b;
-        int i = s;
+        i = s;
         long l = i;
 
         long l2 = 2;

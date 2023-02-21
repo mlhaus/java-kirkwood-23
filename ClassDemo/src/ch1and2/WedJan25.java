@@ -1,3 +1,5 @@
+package ch1and2;
+
 import java.util.Scanner;
 
 public class WedJan25 {

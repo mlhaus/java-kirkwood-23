@@ -1,4 +1,4 @@
-package shapes;
+package ch1and2.shapes;
 
 public class Rectangle extends Shape {
     // instance variables

@@ -1,4 +1,4 @@
-package shapes;
+package ch1and2.shapes;
 
 public class Main {
     public static void main(String[] args) {

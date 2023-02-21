@@ -19,6 +19,11 @@ We initialized our project as a __Git repository__ and pushed our project code t
 
 Going forward, whenever I complete a task I will __Add-Commit-Push (ACP)__
 
-git add .
-git commit -m "describe my work"
-git push origin main
+* git add .
+* git commit -m "describe my work"
+* git push origin main
+
+## Weeks 3 and 4
+
+In chapters 1 and 2 we learned about...
+

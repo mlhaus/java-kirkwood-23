@@ -1,4 +1,4 @@
-package shapes;
+package ch1and2.shapes;
 
 public abstract class Shape {
     // instance variables
