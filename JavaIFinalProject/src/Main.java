@@ -1,3 +1,5 @@
+import utilities.UserInput;
+
 import java.util.Scanner;
 
 public class Main {
@@ -9,6 +11,7 @@ public class Main {
                 System.out.print("Select an option: ");
                 // To Do: Prompt user for all options
                 choice = scanner.nextInt();
+                scanner.nextLine();
                 switch(choice) {
                     case 1:
                         // Get all records
@@ -21,6 +24,8 @@ public class Main {
                         break;
                     case 4:
                         // Add a new record
+                        String title = UserInput.getString(scanner, "Enter the title");
+                        boolean isHardcover = UserInput.getBoolean(scanner, "Is this a hardcover book?");
                         break;
                     case 5:
                         // Update a single record
