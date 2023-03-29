@@ -6,24 +6,25 @@ public class Book {
     private String title;
     private int numPages;
     private double priceInDollars;
-    private boolean read;
-    private LocalDate datePurchased;
+    private boolean newYorkTimesBestSeller;
+    private LocalDate publicationDate;
     private static int bookCount = 0;
     
     public Book() {
         title = "Unknown";
         numPages = 0;
         priceInDollars = 0;
-        read = false;
-        datePurchased = LocalDate.now();
+        newYorkTimesBestSeller = false;
+        publicationDate = LocalDate.now();
+        bookCount++;
     }
 
-    public Book(String title, int numPages, double priceInDollars, boolean read, LocalDate datePurchased) {
+    public Book(String title, int numPages, double priceInDollars, boolean newYorkTimesBestSeller, LocalDate publicationDate) {
         this.title = title;
         this.numPages = numPages;
         this.priceInDollars = priceInDollars;
-        this.read = read;
-        this.datePurchased = datePurchased;
+        this.newYorkTimesBestSeller = newYorkTimesBestSeller;
+        this.publicationDate = publicationDate;
         bookCount++;
     }
 
@@ -39,12 +40,12 @@ public class Book {
         return priceInDollars;
     }
 
-    public boolean isRead() {
-        return read;
+    public boolean isNewYorkTimesBestSeller() {
+        return newYorkTimesBestSeller;
     }
 
-    public LocalDate getDatePurchased() {
-        return datePurchased;
+    public LocalDate getPublicationDate() {
+        return publicationDate;
     }
 
     public static int getBookCount() {
@@ -63,11 +64,11 @@ public class Book {
         this.priceInDollars = priceInDollars;
     }
 
-    public void setRead(boolean read) {
-        this.read = read;
+    public void setNewYorkTimesBestSeller(boolean newYorkTimesBestSeller) {
+        this.newYorkTimesBestSeller = newYorkTimesBestSeller;
     }
 
-    public void setDatePurchased(LocalDate datePurchased) {
-        this.datePurchased = datePurchased;
+    public void setPublicationDate(LocalDate publicationDate) {
+        this.publicationDate = publicationDate;
     }
 }

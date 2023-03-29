@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="1.JavaSyntax" />
+        <module name="JavaIFinalProject" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="1.JavaSyntax" target="1.8" />
+      <module name="JavaIFinalProject" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
