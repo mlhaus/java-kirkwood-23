@@ -1,4 +1,4 @@
-package en.codegym.task.pro.task04.task0405;
+package en.codegym.task.pro.task.task04.task0405;
 
 /*
 Unfilled rectangle

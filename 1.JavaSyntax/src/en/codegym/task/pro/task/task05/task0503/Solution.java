@@ -1,4 +1,4 @@
-package en.codegym.task.pro.task05.task0503;
+package en.codegym.task.pro.task.task05.task0503;
 /*
 Working with elements of an array
 */

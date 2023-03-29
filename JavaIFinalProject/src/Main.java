@@ -1,6 +1,8 @@
+import model.Book;
 import utilities.UserInput;
 
 import java.time.LocalDate;
+import java.time.Month;
 import java.util.Scanner;
 
 public class Main {
@@ -24,14 +26,20 @@ public class Main {
                         break;
                     case 4:
                         // Add a new record
-//                        String title = UserInput.getString(scanner, "Enter the title");
-//                        boolean isHardcover = UserInput.getBoolean(scanner, "Is this a hardcover book?");
-//                        int numPages = UserInput.getInt(scanner, "How many pages?", 1);
-//                        int temperature = UserInput.getInt(scanner, "What temperature is it today?");
-                        LocalDate publicationDate = UserInput.getDate(scanner, "Enter the date of publication");
-                        System.out.println("Month: " + publicationDate.getMonthValue());
-                        System.out.println("Day of month: " + publicationDate.getDayOfMonth());
-                        System.out.println("Year: " + publicationDate.getYear());
+                        Book book1 = new Book("Java for Web Application", 850,
+                                49.99, true,
+                                LocalDate.of(2019, 8, 15));
+                        System.out.println(book1.getTitle());
+                        System.out.println(book1.getNumPages());
+                        Book book2 = new Book("Java a Beginner's Guide", 680,
+                                34.5, true,
+                                LocalDate.of(2020, 9, 1));
+                        System.out.println(book2.getTitle());
+                        System.out.println(book2.getNumPages());
+                        System.out.println(Book.getBookCount());
+                        Book book3 = book1;
+                        book3.setTitle("Python Programming");
+                        System.out.println(book1.getTitle());
                         break;
                     case 5:
                         // Update a single record

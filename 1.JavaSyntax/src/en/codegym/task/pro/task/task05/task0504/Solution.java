@@ -1,4 +1,4 @@
-/*
+package en.codegym.task.pro.task.task05.task0504;/*
 Combining arrays
 */
 

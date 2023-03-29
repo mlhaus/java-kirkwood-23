@@ -1,4 +1,4 @@
-package en.codegym.task.pro.task05.task0508;
+package en.codegym.task.pro.task.task05.task0508;
 
 import java.util.Arrays;
 import java.util.Scanner;

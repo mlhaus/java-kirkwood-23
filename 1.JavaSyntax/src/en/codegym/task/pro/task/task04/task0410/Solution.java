@@ -1,4 +1,4 @@
-package en.codegym.task.pro.task04.task0410;
+package en.codegym.task.pro.task.task04.task0410;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

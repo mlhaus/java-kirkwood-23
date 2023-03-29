@@ -1,4 +1,4 @@
-package en.codegym.task.pro.task05.task0502;
+package en.codegym.task.pro.task.task05.task0502;
 
 /*
 Even and odd cells of an array
