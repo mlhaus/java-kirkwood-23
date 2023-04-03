@@ -19,6 +19,9 @@ public class Main {
                 switch(choice) {
                     case 1:
                         // Get all records
+                        for(Book book: BookDAO.getBooks()) {
+                            System.out.println(book.getTitle());
+                        }
                         break;
                     case 2:
                         // Sort all records
