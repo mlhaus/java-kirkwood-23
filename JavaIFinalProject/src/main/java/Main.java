@@ -1,9 +1,14 @@
 import model.Book;
 import model.BookDAO;
+import tasks.Sort;
+import utilities.Helpers;
 import utilities.UserInput;
 
 import java.time.LocalDate;
 import java.time.Month;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main {
@@ -14,17 +19,25 @@ public class Main {
         // Only one user input Scanner allowed
         try (Scanner scanner = new Scanner(System.in)) {
             int choice = 0;
+            String[] options = {
+                    "Get all books",
+                    "Sort books by date",
+                    "Get one book",
+                    "Add a book",
+                    "Update a book",
+                    "Delete a book"
+            };
             main_program: while(true) {
-                choice = UserInput.getInt(scanner, "Choose an option", 1, 7);
+                System.out.println("\n** MAIN MENU **");
+                choice = Helpers.getChoice(scanner, options);
                 switch(choice) {
                     case 1:
                         // Get all records
-                        for(Book book: BookDAO.getBooks()) {
-                            System.out.println(book.getTitle());
-                        }
+                        Helpers.printArray(BookDAO.getBooks());
                         break;
                     case 2:
                         // Sort all records
+                        Sort.handleTask(scanner);
                         break;
                     case 3:
                         // Get a single record
@@ -42,6 +55,7 @@ public class Main {
                         // exit
                         break main_program;
                 } // close of switch
+                Helpers.pressEnterToContinue(scanner);
             } // close of while
             System.out.println("Good bye!");
         } // close of Scanner

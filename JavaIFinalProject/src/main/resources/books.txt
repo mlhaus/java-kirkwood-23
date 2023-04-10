@@ -1,0 +1,11 @@
+title	author	publication_date	num_pages	nytimes_best_seller	list_price	amazon_link
+I WILL FIND YOU	Harlan Coben	3/14/2023	336	TRUE	30	https://www.amazon.com/dp/1538748363
+LESSONS IN CHEMISTRY	Bonnie Garmus	4/5/2022	400	TRUE	29	https://www.amazon.com/dp/038554734X
+TOMORROW, AND TOMORROW, AND TOMORROW	Gabrielle Zevin	7/5/2022	416	TRUE	28	https://www.amazon.com/dp/0593321200
+STORM WATCH	C.J. Box	2/28/2023	368	TRUE	29	https://www.amazon.com/dp/0593331303
+PINEAPPLE STREET	Jenny Jackson	3/7/2023	320	TRUE	28	https://www.amazon.com/dp/059349069X
+WORTHY OPPONENTS	Danielle Steel	3/7/2023	256	TRUE	28.99	https://www.amazon.com/dp/1984821806
+SOMEONE ELSE'S SHOES	Jojo Moyes	2/7/2023	448	TRUE	29	https://www.amazon.com/dp/1984879294
+I HAVE SOME QUESTIONS FOR YOU	Rebecca Makkai	2/21/2023	448	TRUE	28	https://www.amazon.com/dp/0593490142
+REMARKABLY BRIGHT CREATURES	Shel Van Pelt	5/3/2022	386	TRUE	29.99	https://www.amazon.com/dp/0063204150
+SO SHALL YOU REAP	Donna Leon	3/14/2023	320	TRUE	28	https://www.amazon.com/dp/0802162363
