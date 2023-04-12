@@ -21,7 +21,7 @@ public class Main {
             int choice = 0;
             String[] options = {
                     "Get all books",
-                    "Sort books by date",
+                    "Sort books",
                     "Get one book",
                     "Add a book",
                     "Update a book",
@@ -37,7 +37,8 @@ public class Main {
                         break;
                     case 2:
                         // Sort all records
-                        Sort.handleTask(scanner);
+                        Sort sort = new Sort();
+                        sort.handleTask(scanner);
                         break;
                     case 3:
                         // Get a single record

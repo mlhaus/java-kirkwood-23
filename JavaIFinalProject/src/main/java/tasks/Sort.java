@@ -8,8 +8,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Sort {
-    public static void handleTask(Scanner scanner) {
+public class Sort implements TaskHandler {
+    @Override
+    public void handleTask(Scanner scanner) {
         int choice = 0;
         String[] options = {
                 "Sort by title (A to Z)",
