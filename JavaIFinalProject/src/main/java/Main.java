@@ -1,5 +1,6 @@
 import model.Book;
 import model.BookDAO;
+import tasks.Add;
 import tasks.Sort;
 import utilities.Helpers;
 import utilities.UserInput;
@@ -37,14 +38,14 @@ public class Main {
                         break;
                     case 2:
                         // Sort all records
-                        Sort sort = new Sort();
-                        sort.handleTask(scanner);
+                        new Sort().handleTask(scanner);
                         break;
                     case 3:
                         // Get a single record
                         break;
                     case 4:
                         // Add a new record
+                        new Add().handleTask(scanner);
                         break;
                     case 5:
                         // Update a single record

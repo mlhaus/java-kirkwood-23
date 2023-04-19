@@ -20,12 +20,13 @@ public class Helpers {
     
     public static void printArray(ArrayList<Book> books) {
         for(Book book: books) {
-            System.out.println("Title: " + book.getTitle());
-            System.out.println("Number of Pages: " + book.getNumPages());
-            System.out.println("Publication Date: " + book.getPublicationDate());
-            System.out.println("NYT Best Seller: " + book.isNewYorkTimesBestSeller());
-            System.out.println("Retail Price: " + book.getPriceInDollars());
-            System.out.println();
+            System.out.println(book);
+//            System.out.println("Title: " + book.getTitle());
+//            System.out.println("Number of Pages: " + book.getNumPages());
+//            System.out.println("Publication Date: " + book.getPublicationDate());
+//            System.out.println("NYT Best Seller: " + book.isNewYorkTimesBestSeller());
+//            System.out.println("Retail Price: " + book.getPriceInDollars());
+//            System.out.println();
         }
     }
 }

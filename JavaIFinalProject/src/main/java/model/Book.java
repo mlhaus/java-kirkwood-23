@@ -76,4 +76,11 @@ public class Book implements Comparable<Book> {
     public int compareTo(Book o) {
         return this.title.compareTo(o.title);
     }
+
+    @Override
+    public String toString() {
+        return String.format("Title: %s\nPublication Date: %s\nPrice: %.2f\nPages: %d\n\n",
+                this.title, this.publicationDate, this.priceInDollars, this.numPages
+                );
+    }
 }

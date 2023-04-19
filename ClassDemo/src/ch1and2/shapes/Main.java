@@ -4,8 +4,14 @@ public class Main {
     public static void main(String[] args) {
         Shape shape = new Circle();
         Shape shape2 = new Rectangle();
+        Circle circle = null;
+        try {
+            circle = new Circle(-2.5);
+        } catch(IllegalArgumentException ex) {
+            System.out.println(ex.getMessage());
+            circle = new Circle();
+        }
 
-        Circle circle = new Circle(2.5);
         Rectangle rect = new Rectangle(2.25, 4.1);
 
         System.out.println(circle.getArea());

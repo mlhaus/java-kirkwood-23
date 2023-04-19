@@ -1,5 +1,7 @@
 package tasks;
 
+import model.Book;
+import model.BookDAO;
 import utilities.UserInput;
 
 import java.time.LocalDate;
@@ -14,8 +16,14 @@ public class Add implements TaskHandler {
         int numPages = UserInput.getInt(scanner, "How many pages are there?", 0);
         // Final Project part 3 - Write getDouble methods in the UserInput class
         boolean nytimesBestseller = UserInput.getBoolean(scanner, "Is this a NY Times best seller?");
-        // instantiate an object
-        // add to the array
-        // update the CSV file
+        
+        Book book = new Book();
+        book.setTitle(title);
+        book.setPublicationDate(publicationDate);
+        book.setNumPages(numPages);
+        book.setNewYorkTimesBestSeller(nytimesBestseller);
+        // set the double on your own
+
+        BookDAO.addBook(book);
     }
 }
