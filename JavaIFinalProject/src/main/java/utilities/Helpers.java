@@ -3,6 +3,9 @@ package utilities;
 import model.Book;
 import model.BookDAO;
 
+import java.text.DecimalFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -19,14 +22,20 @@ public class Helpers {
     }
     
     public static void printArray(ArrayList<Book> books) {
+        System.out.println(Book.getHeaderRow());
         for(Book book: books) {
             System.out.println(book);
-//            System.out.println("Title: " + book.getTitle());
-//            System.out.println("Number of Pages: " + book.getNumPages());
-//            System.out.println("Publication Date: " + book.getPublicationDate());
-//            System.out.println("NYT Best Seller: " + book.isNewYorkTimesBestSeller());
-//            System.out.println("Retail Price: " + book.getPriceInDollars());
-//            System.out.println();
         }
+    }
+    
+    public static String formatDate(LocalDate date) {
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("MMMM d, yyyy");
+        String formattedDate = date.format(format);
+        return formattedDate;
+    }
+    
+    public static String formatCurrency(double amount) {
+        DecimalFormat formatter = new DecimalFormat("#,##0.00");
+        return "$" + formatter.format(amount);
     }
 }

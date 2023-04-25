@@ -1,5 +1,7 @@
 package model;
 
+import utilities.Helpers;
+
 import java.time.LocalDate;
 
 public class Book implements Comparable<Book> {
@@ -77,10 +79,17 @@ public class Book implements Comparable<Book> {
         return this.title.compareTo(o.title);
     }
 
+    public static String getHeaderRow() {
+        return String.format("%-40s\t%-20s\t%10s\t%5s\t%-6s",
+                "Title","Publication Date","Price","Pages","NY Times");
+    }
+
     @Override
     public String toString() {
-        return String.format("Title: %s\nPublication Date: %s\nPrice: %.2f\nPages: %d\n\n",
-                this.title, this.publicationDate, this.priceInDollars, this.numPages
+        return String.format("%-40s\t%-20s\t%10s\t%5d\t%-6s",
+                this.title, Helpers.formatDate(this.publicationDate), 
+                Helpers.formatCurrency(this.priceInDollars),
+                this.numPages, this.newYorkTimesBestSeller ? "Yes" : "No" 
                 );
     }
 }
