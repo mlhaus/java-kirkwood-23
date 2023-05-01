@@ -25,9 +25,6 @@ public class UserInput {
                 && !value.equalsIgnoreCase("N"));
         return value.equalsIgnoreCase("Yes") || value.equalsIgnoreCase("Y");
     }
-    public static int getInt(Scanner scanner, int x) {
-        return 0;
-    }
     // Get any number
     public static int getInt(Scanner scanner, String prompt) {
         return getInt(scanner, prompt, Integer.MIN_VALUE, Integer.MAX_VALUE);

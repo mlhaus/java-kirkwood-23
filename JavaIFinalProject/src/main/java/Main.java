@@ -1,6 +1,7 @@
 import model.Book;
 import model.BookDAO;
 import tasks.Add;
+import tasks.Search;
 import tasks.Sort;
 import utilities.Helpers;
 import utilities.UserInput;
@@ -23,7 +24,7 @@ public class Main {
             String[] options = {
                     "Get all books",
                     "Sort books",
-                    "Get one book",
+                    "Search books",
                     "Add a book",
                     "Update a book",
                     "Delete a book"
@@ -37,14 +38,12 @@ public class Main {
                         Helpers.printArray(BookDAO.getBooks());
                         break;
                     case 2:
-                        // Sort all records
                         new Sort().handleTask(scanner);
                         break;
                     case 3:
-                        // Get a single record
+                        new Search().handleTask(scanner);
                         break;
                     case 4:
-                        // Add a new record
                         new Add().handleTask(scanner);
                         break;
                     case 5:

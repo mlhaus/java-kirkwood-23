@@ -4,7 +4,7 @@ package en.codegym.task.pro.task.task06.task0605;
 Correct order
 */
 
-import org.apache.commons.lang.ArrayUtils;
+
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -26,7 +26,6 @@ public class Solution {
 //            array[array.length - 1 - i] = temp;
 //        }
 //        ArrayUtils.reverse(array);
-        Collections.reverse(Arrays.asList(array));
     }
 
     public static void printArray(Integer[] array) {
